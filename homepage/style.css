@@ -5,14 +5,39 @@ html * {
     font-weight: 500;
 }
 
+.logo {
+    max-width: 40px;
+}
+
 .container-fluid {
     background-color: #800080;
 }
 
 .nav-link-custom {
     color: #FFA500;
+    font-size: 20px;
+    font-weight: 500;
 }
 
-.logotipo {
-    max-width: 40px;
+main {
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-custom {
+    max-width: max-content;
+    align-items: center;
+    background-color: #FFA500;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body button {
+    max-width: max-content;
 }
