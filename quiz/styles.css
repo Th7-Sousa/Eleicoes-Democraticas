@@ -10,11 +10,16 @@ html * {
 }
 
 .container-fluid {
-    background-color: #800080;
+    margin-top: -0.5rem;
+    background-color: #7C4599;
 }
 
 .nav-link-custom {
-    color: #FFA500;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 500;
+}
+
+.nav-link-custom:hover {
+    color: #FFA500;
 }

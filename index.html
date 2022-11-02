@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="public/logo.svg" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,15 +19,14 @@
     <link rel="stylesheet" href="style.css" />
     <title>TSE Eleições</title>
   </head>
+
   <body>
+    <!-- NAV -->
+
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
-          <img
-            class="logo"
-            src="public/logo.svg"
-            alt="Logo"
-          />
+          <img class="logo" src="public/logo.svg" alt="Logo" />
         </a>
         <button
           class="navbar-toggler"
@@ -44,37 +44,294 @@
 
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 menu-custom">
             <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="/"
-                >Home</a
+              <a class="nav-link nav-link-custom" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/quiz/quiz.html"
+                >Quiz</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="/quiz/quiz.html">Quiz</a>
+              <a
+                class="nav-link nav-link-custom"
+                href="/estatisticas/estatisticas.html"
+                >Estatísticas</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="/estatisticas/estatisticas.html">Estatísticas</a>
+              <a class="nav-link nav-link-custom" href="/game/game.html"
+                >Game</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="/game/game.html">Game</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="/mais/pageMais.html">Mais</a>
+              <a class="nav-link nav-link-custom" href="/mais/pageMais.html"
+                >História</a
+              >
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+    <!-- MAIN -->
     <main>
-      <section>
-        <div class="card card-custom">
-          <h1>Bem Vindo!</h1>
-          <div class="card-body">
-            <p class="card-text fs-5">
-              Seja bem vindo a nossa plataforma! Aqui você terá acesso a vários
-              tipos de informações sobre as eleições.
+      <div class="container-subtitulo">
+        <p class="subtitulo-1">Destaques e Notícias</p>
+      </div>
+
+      <!-- CARROCEL -->
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide custom-corrocel"
+        data-bs-ride="true"
+      >
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <a
+              target="_blank"
+              href="https://www.tse.jus.br/o-tse/escola-judiciaria-eleitoral/publicacoes/revistas-da-eje/artigos/revista-eletronica-eje-n.-6-ano-4/por-que-a-urna-eletronica-e-segura
+            "
+            >
+              <img
+                src="public/destaque-1.svg"
+                class="d-block w-100 img-fluid"
+                alt="destaque 1"
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              target="_blank"
+              href="https://g1.globo.com/politica/eleicoes/2022/noticia/2022/10/27/urnas-eletronicas-entenda-a-tecnologia-que-gera-o-resultado-das-eleicoes-em-poucas-horas.ghtml"
+            >
+              <img
+                src="public/destaque-2.svg"
+                class="d-block w-100 img-fluid"
+                alt="destaque 2"
+              />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <a
+              target="_blank"
+              href="https://www.tse.jus.br/comunicacao/noticias/2022/Outubro/tcu-apresenta-a-corte-eleitoral-dados-parciais-de-auditoria-realizada-em-boletins-de-urna-das-eleicoes-2022"
+            >
+              <img
+                src="public/destaque-3.svg"
+                class="d-block w-100 mh-10"
+                alt="destaque 3"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SEÇÃO SOBRE -->
+      <section class="sobre">
+        <h4 class="fw-bold text-wrap">Sobre a plataforma</h4>
+        <p align="justify" class="text-wrap">
+          A confiança em um sistema eleitoral íntegro e seguro é o primeiro
+          passo para que o eleitor(a) possa comparecer às urnas com
+          tranquilidade e exercer a cidadania escolhendo seu candidato. E por
+          isso a plataforma do TSE está a sua disposição, seja para entender
+          como funciona o sistema eleitoral e aprender mais sobre a tecnologia
+          utilizada nas urnas eletrônicas, ou para ficar informado com notícias
+          confiáveis sobre as eleições.
+        </p>
+      </section>
+
+      <!-- SEÇÃO SISTEMA ELEITORAL BRASILEIRO -->
+      <section class="secao-sistema-eleitoral">
+        <div class="eleitoral-cabecalho">
+          <h4 class="fw-bold text-wrap">Sistema eleitoral brasileiro</h4>
+        </div>
+
+        <div class="eleitoral-container-1">
+          <div>
+            <p align="justify">
+              Os sistemas eleitorais têm como função a organização das eleições
+              e a conversão de votos em mandatos políticos, visando proporcionar
+              uma captação eficiente, segura e imparcial da vontade popular
+              democraticamente manifestada, de forma que os mandatos eletivos
+              sejam exercidos com legitimidade. Também é função dos sistemas
+              eleitorais o estabelecimento dos meios para que os diversos grupos
+              sociais sejam representados e as relações entre representantes e
+              representados se fortaleçam.
             </p>
-            <button>Vamos lá</button>
+            <p align="justify">
+              Em uma forma de governo democrática como a existente no Brasil, o
+              entendimento dos sistemas eleitorais é imprescindível. Porém, de
+              acordo com Gomes (2011), eles são mutáveis, ou seja, variam no
+              tempo e no espaço, e a forma que assumem em determinada sociedade
+              decorre da atuação, da interação e dos conflitos travados entre as
+              diversas forças político-sociais constituídas ao longo da
+              história.
+            </p>
+          </div>
+          <video
+            class="video-voto-consciente"
+            title="Gif voto consciente"
+            src="public/voto-consciente.mp4"
+            preload="auto"
+            autoplay="autoplay"
+            autoplay
+            loop
+            muted
+          >
+            Seu browser não suporta a tag de vídeo.
+          </video>
+        </div>
+
+        <div class="eleitoral-container-2">
+            <h5 class="fw-bold tipo-titulo">
+              Sistemas Majoritário e Proporcional
+            </h5>
+          <div class="tipos-sistemas-container">
+            <div class="majoritario-container">
+              <img
+                class="img-majoritario"
+                src="public/sistema-majoritario.svg"
+              />
+              <p align="justify" class="text-wrap fst-italic legenda-img">
+                Fonte: Unimed.org
+              </p>
+            </div>
+            <div>
+              <img
+                class="img-proporcional"
+                src="public/sistema-proporcional.svg"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="eleitoral-container-3">
+          <div class="eleitoral-container-3-voto">
+            <h6 class="voto-titulo fw-bold">O voto é:</h6>
+            <div class="voto-items">
+              <p id="voto-items-1">Direto</p>
+              <p id="voto-items-2" class="text-wrap">Voto exercido diereta e pessoalmente</p>
+            </div>
+            <div class="voto-items">
+              <p id="voto-items-1">Secreto</p>
+              <p id="voto-items-2" class="text-wrap">Não indentificado</p>
+            </div>
+            <div class="voto-items">
+              <p id="voto-items-1">De igual valor</p>
+              <p id="voto-items-2" class="text-wrap">Cada voto possui o mesmo peso</p>
+            </div>
+            <div class="voto-items">
+              <p id="voto-items-1">Obrigatório</p>
+              <p id="voto-items-2" class="text-wrap">Todos devem votar (há exceções)</p>
+            </div>
+            <div class="voto-items">
+              <p id="voto-items-1">Universal</p>
+              <p id="voto-items-2" class="text-wrap">Exercido por todos os adequados</p>
+            </div>
+          </div>
+
+          <div class="eleitoral-container-3-video">
+              <p class="fw-bolder text-wrap" id="eleitoral-titulo-video">
+                Para mais informações assista o vídeo:
+              </p>
+            <video
+              class="video-sistema-eleitoral"
+              title="Vídeo sistema eleitoral brasileiro"
+              src="public/sistema-eleitoral-brasileiro.mp4"
+              controls
+              controlsList="nodownload"
+              poster="public/poster-sistema-eleitoral.svg"
+            >
+              Seu browser não suporta a tag de vídeo.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      <!-- SEÇÃO URNAS ELETRÔNICAS -->
+      <section class="secao-urnas">
+        <div class="secao-urnas-cabecalho">
+          <h4 class="fw-bold text-wrap">As urnas eletrônicas</h4>
+          <img
+            class="img-urna"
+            src="public/urna-eletronica.svg"
+            alt="Ilustração urna"
+          />
+        </div>
+        <div class="secao-urnas-container-1">
+          <p align="justify">
+            A urna eletrônica é o aparelho utilizado em nosso país para
+            contabilizar os votos da população nas eleições. Por meio dele, a
+            população brasileira escolhe os seus candidatos, e a apuração dos
+            resultados é totalmente digital. A implantação desse sistema se deu
+            ao longo das décadas de 1980 e 1990, com a progressiva
+            informatização do sistema eleitoral brasileiro. Veja mais sobre
+            "Urna eletrônica" em:
+            <a
+              class="link-brasil-escola"
+              href="https://brasilescola.uol.com.br/politica/urna-eletronica.htm"
+            >
+              Brasil Escola </a
+            >.
+          </p>
+
+          <div class="secao-urnas-container-2">
+            <div>
+              <p align="justify">
+                Agora assista este vídeo (entrevista do ex-secretário de
+                tecnologia do TSE, Giuseppe Janino, ao canal UOL) para entender
+                melhor sobre como funciona a segurança das urnas eletrônicas.
+              </p>
+            </div>
+            <video
+              class="video-seguranca-urnas ratio ratio-16x9"
+              title="Vídeo sobre a segurança das urnas eletrônicas"
+              src="public/urnas-eletronicas.mp4"
+              controls
+              controlsList="nodownload"
+            >
+              Seu browser não suporta a tag de vídeo.
+            </video>
           </div>
         </div>
       </section>

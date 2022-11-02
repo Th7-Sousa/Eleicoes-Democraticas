@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 html * {
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
+}
+
+main {
+    padding: 0 1rem 2rem;
 }
 
 .logo {
@@ -10,34 +18,280 @@ html * {
 }
 
 .container-fluid {
-    background-color: #800080;
+    margin-top: -0.5rem;
+    background-color: #7C4599;
 }
 
 .nav-link-custom {
-    color: #FFA500;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 500;
 }
 
-main {
-    padding: 2rem 1rem;
+.nav-link-custom:hover {
+    color: #FFA500;
+}
+
+.custom-corrocel {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 3px 3px 4px black;
+}
+
+.container-subtitulo {
+    padding: 1.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* _______Sobre__________ */
+
+.subtitulo-1 {
+    color: #FF0000;
+    font-size: 24px;
+}
+
+.sobre {
+    padding: 4rem 1.5rem 0 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
 }
 
-.card-custom {
-    max-width: max-content;
-    align-items: center;
-    background-color: #FFA500;
-}
+/* _______Eleitoral__________ */
 
-.card-body {
+.secao-sistema-eleitoral {
+    margin-top: 3rem;
+    padding: 1rem 1.5rem 1rem 2rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    border: 2px solid #7C4599;
+    background: linear-gradient(to bottom, #fff, #7C4599);
+    border-radius: 5px;
 }
 
-.card-body button {
+.eleitoral-cabecalho {
+    color: #FF0000;
+    padding-bottom: 0.5rem;
+}
+
+.eleitoral-container-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.video-voto-consciente {
+    width: 50%;
+    border-radius: 20px 5px;
+    height: 15rem;
+}
+
+.eleitoral-container-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.tipos-sistemas-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tipo-titulo {
+    max-width: max-content;
+    border-bottom: 3px solid #FF0000;
+    font-size: 18px;
+}
+
+.majoritario-container {
     max-width: max-content;
 }
+
+.img-majoritario, .img-proporcional {
+    max-width: 97%;
+    max-height: max-content;
+    border-radius: 5px 25px;
+}
+
+.legenda-img {
+    padding-top: 0.1rem;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.eleitoral-container-3 {
+    padding-top: 3rem;
+    padding-right: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.eleitoral-container-3-voto {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.voto-titulo {
+    max-width: max-content;
+    font-size: 23px;
+    margin-left: 5px;
+    border-bottom: 3px solid #FFA500;
+}
+
+.voto-items {
+    min-width: 50%;
+    max-height: 6rem;
+    background-color: #ffffff;
+    opacity: 0.8;
+    padding: 0.6rem 0.7rem 0 0.7rem;
+    border-radius: 30px 0 30px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    flex-wrap: wrap;
+}
+
+#voto-items-1 {
+    color: #000;
+    font-weight: bold;
+}
+
+#voto-items-2 {
+    margin-top: -1rem;
+    color: #FF0000;
+    font-size: 14px;
+}
+
+.eleitoral-container-3-video {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.video-sistema-eleitoral {
+    width: 100%;
+    box-shadow: 2px 2px 4px #000;
+    border-radius: 5px;
+}
+
+/* _______Urnas__________ */
+
+.secao-urnas {
+    margin-top: 4.5rem;
+    padding: 1rem 1.5rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f4ecec;
+    border: 2px inset #FFA500;
+}
+
+.secao-urnas-container-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.secao-urnas-cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-urna {
+    max-width: 60px;
+    border: 1px solid #7C4599;
+}
+
+.link-brasil-escola {
+    color: #7C4599;
+}
+
+.secao-urnas-container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+.secao-urnas-container-2 p {
+    color: #7C4599;
+    font-weight: bold;
+}
+
+.video-seguranca-urnas {
+    max-width: 60%;
+    box-shadow: 1px 1px 2px #000;
+    border-radius: 5px;
+}
+
+/* _______Responsive__________ */
+
+@media (max-width: 752px) {
+    .secao-urnas-container-2 {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 260px) {
+    .img-urna {
+        display: none;
+    }
+
+    .eleitoral-container-3-voto {
+        display: none;
+    }
+
+    .tipo-titulo {
+        color: #fff;
+    }
+}
+
+@media (max-width: 490px) {
+    .video-voto-consciente {
+        display: none;
+    }
+}
+
+@media (max-width: 810px) {
+    .tipos-sistemas-container {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 350px) {
+    .voto-items {
+        max-height: max-content;
+    }
+
+    .img-majoritario, .img-proporcional {
+        border-radius: 0;
+    }
+}
+
+@media (max-width: 751px) {
+    .eleitoral-container-3, .tipos-sistemas-container {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .eleitoral-container-3-video {
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 1280px) {}
