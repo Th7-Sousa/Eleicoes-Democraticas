@@ -238,13 +238,156 @@ main {
     border-radius: 5px;
 }
 
-/* _______Responsive__________ */
+/* _______Fake News__________ */
 
-@media (max-width: 752px) {
-    .secao-urnas-container-2 {
-        flex-wrap: wrap;
-    }
+.secao-fake-news {
+    margin-top: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 2rem;
 }
+
+.fake-news-cabecario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: #af8bc4;
+    padding: 0.7rem 0.7rem;
+    border-top: 3px solid #000;
+    border-radius: 0 0 2rem 2rem;
+}
+
+.fake-news-cabecario img {
+    max-width: 15%;
+    min-width: 15%;
+}
+
+.fake-news-cabecario h4 {
+    color: #fff;
+}
+
+.fake-news-container-1 {
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.fake-news-container-1-text {
+    max-width: 55%;
+}
+
+.fake-news-container-1 img {
+    width: 180px;
+}
+
+.fake-news-container-2 {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+}
+
+.fake-news-container-2 img {
+    width: 350px;
+}
+
+.fake-news-container-2-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fake-news-container-2-button p {
+    color: #FF0000;
+    font-size: 24px;
+}
+
+.fake-news-container-2-button a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #7C4599;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: 0.3s all ease-in-out;
+}
+
+.fake-news-container-2-button a:hover {
+    background-color: #9b5fbb;
+    transform: scale(1.1);
+}
+
+.seta-buttom {
+    max-width: 12px;
+}
+
+/* _______Footer______________ */
+
+footer {
+    background-color: #1D0426;
+    padding: 0.7rem 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+
+.footer-cabecario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-cabecario a {
+    background-color: #FFA500;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+.seta-topo {
+    max-width: 15px;
+}
+
+.footer-container-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.footer-container-1-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-icone-social {
+    max-width: 30px;
+    transition: 0.3s all ease-in-out;
+}
+
+.footer-icone-social:hover {
+    transform: scale(1.1);
+}
+
+.footer-container-2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+/* _______Responsive__________ */
 
 @media (max-width: 260px) {
     .img-urna {
@@ -258,17 +401,13 @@ main {
     .tipo-titulo {
         color: #fff;
     }
-}
 
-@media (max-width: 490px) {
-    .video-voto-consciente {
-        display: none;
+    .fake-news-container-2 img {
+        width: 100%;
     }
-}
 
-@media (max-width: 810px) {
-    .tipos-sistemas-container {
-        flex-wrap: wrap;
+    .footer-cabecario a {
+        display: none;
     }
 }
 
@@ -279,6 +418,33 @@ main {
 
     .img-majoritario, .img-proporcional {
         border-radius: 0;
+    }
+
+    .fake-news-cabecario-container-text h4 {
+        font-size: 15.5px;
+    }
+}
+
+@media (max-width: 433px) {
+    .fake-news-cabecario img {
+        max-width: 38%;
+        min-width: 38%;
+    }
+}
+
+@media (max-width: 490px) {
+    .video-voto-consciente {
+        display: none;
+    }
+}
+
+@media (max-width: 557px) {
+    .fake-news-container-1 img {
+        display: none;
+    }
+
+    .fake-news-container-1-text {
+        max-width: 100%;
     }
 }
 
@@ -294,4 +460,28 @@ main {
 
 }
 
-@media (min-width: 1280px) {}
+@media (max-width: 752px) {
+    .secao-urnas-container-2 {
+        flex-wrap: wrap;
+    }
+
+    .fake-news-cabecario img {
+        max-width: 40%;
+    }
+}
+
+@media (max-width: 752px) and (min-width: 370px) {
+    .video-seguranca-urnas {
+        min-width: 280px;
+    }
+}
+
+@media (max-width: 810px) {
+    .tipos-sistemas-container {
+        flex-wrap: wrap;
+    }
+
+    .fake-news-cabecario img {
+        max-width: 20%;
+    }
+}

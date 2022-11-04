@@ -22,9 +22,8 @@
 
   <body>
     <!-- NAV -->
-
     <nav class="navbar navbar-expand-lg bg-light">
-      <div class="container-fluid">
+      <div class="container-fluid" id="topo">
         <a class="navbar-brand" href="/">
           <img class="logo" src="public/logo.svg" alt="Logo" />
         </a>
@@ -44,12 +43,15 @@
 
           <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 menu-custom">
             <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="/">Home</a>
+              <a
+                class="nav-link active nav-link-custom"
+                aria-current="page"
+                href="/"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="quiz/quiz.html"
-                >Quiz</a
-              >
+              <a class="nav-link nav-link-custom" href="quiz/quiz.html">Quiz</a>
             </li>
             <li class="nav-item">
               <a
@@ -59,9 +61,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-link-custom" href="game/game.html"
-                >Game</a
-              >
+              <a class="nav-link nav-link-custom" href="game/game.html">Game</a>
             </li>
             <li class="nav-item">
               <a class="nav-link nav-link-custom" href="mais/pageMais.html"
@@ -223,9 +223,9 @@
         </div>
 
         <div class="eleitoral-container-2">
-            <h5 class="fw-bold tipo-titulo">
-              Sistemas Majoritário e Proporcional
-            </h5>
+          <h5 class="fw-bold tipo-titulo">
+            Sistemas Majoritário e Proporcional
+          </h5>
           <div class="tipos-sistemas-container">
             <div class="majoritario-container">
               <img
@@ -250,7 +250,9 @@
             <h6 class="voto-titulo fw-bold">O voto é:</h6>
             <div class="voto-items">
               <p id="voto-items-1">Direto</p>
-              <p id="voto-items-2" class="text-wrap">Voto exercido diereta e pessoalmente</p>
+              <p id="voto-items-2" class="text-wrap">
+                Voto exercido diereta e pessoalmente
+              </p>
             </div>
             <div class="voto-items">
               <p id="voto-items-1">Secreto</p>
@@ -258,22 +260,28 @@
             </div>
             <div class="voto-items">
               <p id="voto-items-1">De igual valor</p>
-              <p id="voto-items-2" class="text-wrap">Cada voto possui o mesmo peso</p>
+              <p id="voto-items-2" class="text-wrap">
+                Cada voto possui o mesmo peso
+              </p>
             </div>
             <div class="voto-items">
               <p id="voto-items-1">Obrigatório</p>
-              <p id="voto-items-2" class="text-wrap">Todos devem votar (há exceções)</p>
+              <p id="voto-items-2" class="text-wrap">
+                Todos devem votar (há exceções)
+              </p>
             </div>
             <div class="voto-items">
               <p id="voto-items-1">Universal</p>
-              <p id="voto-items-2" class="text-wrap">Exercido por todos os adequados</p>
+              <p id="voto-items-2" class="text-wrap">
+                Exercido por todos os adequados
+              </p>
             </div>
           </div>
 
           <div class="eleitoral-container-3-video">
-              <p class="fw-bolder text-wrap" id="eleitoral-titulo-video">
-                Para mais informações assista o vídeo:
-              </p>
+            <p class="fw-bolder text-wrap" id="eleitoral-titulo-video">
+              Para mais informações assista o vídeo:
+            </p>
             <video
               class="video-sistema-eleitoral"
               title="Vídeo sistema eleitoral brasileiro"
@@ -308,6 +316,7 @@
             informatização do sistema eleitoral brasileiro. Veja mais sobre
             "Urna eletrônica" em:
             <a
+              target="_blank"
               class="link-brasil-escola"
               href="https://brasilescola.uol.com.br/politica/urna-eletronica.htm"
             >
@@ -335,6 +344,106 @@
           </div>
         </div>
       </section>
+
+      <!-- SEÇÃO FAKE NEWS -->
+      <section class="secao-fake-news">
+        <div class="fake-news-cabecario">
+          <img src="public/fato-fake.svg" alt="Imagem fato ou fake" />
+          <div class="fake-news-cabecario-container-text">
+            <h4 class="text-wrap">Indentificando Fake News</h4>
+          </div>
+        </div>
+
+        <div class="fake-news-container-1">
+          <div class="fake-news-container-1-text">
+            <p align="justify">
+              O combate à desinformação é prioritário para a Justiça Eleitoral.
+              Criada em 2020 para ampliar o esclarecimento de informações
+              relacionadas ao processo eleitoral, a página Fato ou Boato fomenta
+              a circulação de conteúdos verídicos e estimula a verificação por
+              meio da divulgação de notícias checadas, recomendações e conteúdos
+              educativos.
+            </p>
+          </div>
+          <img src="public/gif-duvida.gif" alt="Gif dúvida" />
+        </div>
+        <div class="fake-news-container-2">
+          <img src="public/fato-boato.svg" alt="Ilustração fato ou boato" />
+          <div class="fake-news-container-2-button">
+            <p class="fw-bold">Quer checar uma notícia?</p>
+            <p class="fw-bold">Clique no botão:</p>
+            <a
+              href="https://www.justicaeleitoral.jus.br/fato-ou-boato/#"
+              target="_blank"
+              >Checar notícia
+              <img
+                class="seta-buttom"
+                src="public/arrow.svg"
+                alt="Seta ilustrativa"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-cabecario">
+        <img src="public/logo-footer.svg" alt="Logotipo TSE" />
+        <a href="#topo">
+          <img
+            class="seta-topo"
+            src="public/seta-topo.svg"
+            alt="Seta ilustrativa topo"
+          />
+        </a>
+      </div>
+
+      <div class="footer-container-1">
+        <div class="footer-container-1-contato">
+          <p>Contato:</p>
+          <p>
+            Tel: (61) 3030-7000
+            <br />
+            Email: tse@gmail.com
+          </p>
+        </div>
+        <div class="footer-container-1-social">
+          <a target="_blank" href="https://www.facebook.com/TSEJus/"
+            ><img
+              class="footer-icone-social"
+              src="public/icon-facebook.svg"
+              alt="Ícone Facebook"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/user/justicaeleitoral"
+            ><img
+              class="footer-icone-social"
+              src="public/icon-youtube.svg"
+              alt="Ícone YouTube"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/tsejus/?originalSubdomain=br"
+            ><img
+              class="footer-icone-social"
+              src="public/icon-linkedin.svg"
+              alt="Ícone Linkedin"
+          /></a>
+          <a target="_blank" href="https://www.instagram.com/tsejus/"
+            ><img
+              class="footer-icone-social"
+              src="public/icon-instagran.svg"
+              alt="Ícone Instagran"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-container-2">
+        <p>© 2022 Tribunal Superior Eleitoral , todos os direitos reservados</p>
+      </div>
+    </footer>
   </body>
 </html>
