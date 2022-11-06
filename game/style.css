@@ -1,7 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
 html * {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 500;
 }
 
@@ -11,7 +17,7 @@ html * {
 
 .container-fluid {
     margin-top: -0.5rem;
-    background-color: #7C4599;
+    background-color: #7c4599;
 }
 
 .nav-link-custom {
@@ -21,5 +27,194 @@ html * {
 }
 
 .nav-link-custom:hover {
-    color: #FFA500;
+    color: #ffa500;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0.2rem 3rem 0.2rem;
+}
+
+.container-principal {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
+}
+
+.container-game {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container-game-instrucao {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.buttons-e-timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.tempo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+}
+
+#millisecond {
+    display: none;
+}
+
+.memory-game {
+    max-height: max-content;
+    max-width: 1300px;
+    display: flex;
+    gap: 7px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    perspective: 1000px;
+    /* perspectiva do usuario no eixo z, quanto maior, maior o efeito da perspectiva */
+}
+
+.card {
+    width: 250px;
+    height: 170px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.9s;
+}
+
+.card:active {
+    transform: scale(0.97);
+    transition: transform 0.2s;
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    background: #d56a00;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    transform: rotateY(180deg);
+    /* antes, o verso aparecia transparente, pois ambas as imagens tem position absolute, ao girar no eixo Y, elas ficaram com os versos virados */
+}
+
+.card.flip {
+    transform: rotateY(180deg);
+}
+
+#card-win {
+    background-color: #10b552;
+    padding: 0.5rem;
+    color: #fff;
+    border-radius: 6px;
+    font-size: 22px;
+    max-width: max-content;
+    position: absolute;
+    top: 10rem;
+    opacity: 96%;
+}
+
+#start {
+    color: #fff;
+    background-color: #1ac241;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: 0.3s all ease-in-out;
+}
+
+#start:hover {
+    background-color: #88e759;
+    transform: scale(1.1);
+}
+
+#refresh {
+    text-decoration: none;
+    color: #fff;
+    background-color: #7c4599;
+    padding: 0.5rem;
+    border-radius: 8px;
+    transition: 0.3s all ease-in-out;
+}
+
+#refresh:hover {
+    background-color: #9b5fbb;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1121px) {
+    .card {
+        width: 200px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 921px) {
+    .card {
+        width: 160px;
+        height: 130px;
+    }
+}
+
+@media (max-width: 761px) {
+    .card {
+        width: 130px;
+        height: 110px;
+    }
+}
+
+@media (max-width: 641px) and (min-width: 400px) {
+    .card {
+        width: 110px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 412px) {
+    .card {
+        width: 80px;
+        height: 90px;
+    }
+}
+
+@media (max-width: 322px) {
+    .card {
+        width: 70px;
+        height: 80px;
+    }
+
+    #card-win {
+        max-width: 200px;
+    }
+}
+
+@media (max-width: 292px) {
+    .card {
+        width: 90px;
+        height: 100px;
+    }
 }

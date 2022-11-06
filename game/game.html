@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -15,58 +15,246 @@
       integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>TSE Eleições - Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav class="navbar navbar-expand-lg bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img
-              class="logo"
-              src="./../public/logo.svg"
-              alt="Logo"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-  
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 menu-custom">
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="/"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../quiz/quiz.html">Quiz</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../estatisticas/estatisticas.html">Estatísticas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active nav-link-custom" aria-current="page" href="./../game/game.html">Game</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../mais/pageMais.html">Mais</a>
-              </li>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img class="logo" src="./../public/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 menu-custom">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="./../quiz/quiz.html"
+                >Quiz</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-custom"
+                href="./../estatisticas/estatisticas.html"
+                >Estatísticas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-link-custom"
+                aria-current="page"
+                href="./../game/game.html"
+                >Game</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="./../mais/pageMais.html"
+                >Mais</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div id="card-win">
+        <span>Parabéns !</span>
+        <p>Você encontrou todos os pares</p>
+      </div>
+
+      <div class="container-principal">
+        <h3>Bem vindo ao jogo da Memória Democrática!</h3>
+
+        <div class="container-game">
+          <div class="container-game-instrucao">
+            <h5>Instruções</h5>
+            <ul>
+              <li>Encontre duas imagens iguais para formar um par</li>
+              <li>Monte todos os pares para vencer</li>
             </ul>
           </div>
-        </div>
-      </nav>
 
-      <main>
-        Game
-      </main>
-</body>
+          <div class="buttons-e-timer">
+            <button id="start" type="button" name="start">Start</button>
+
+            <button id="refresh">Embaralhar</button>
+            <form class="tempo" name="form_main">
+              SEU TEMPO =>
+              <div>
+                <span id="hour">00</span>:<span id="minute">00</span>:<span
+                  id="second"
+                  >00</span
+                ><span id="millisecond">000</span>
+              </div>
+            </form>
+          </div>
+
+          <div class="memory-game" id="ancora-game">
+            <div class="card" data-card="bowser">
+              <img
+                class="card-front"
+                src="./img/bandeira-urna.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="luigi">
+              <img
+                class="card-front"
+                src="./img/nao-corrupcao.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="mario">
+              <img
+                class="card-front"
+                src="./img/logo.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="peach">
+              <img
+                class="card-front"
+                src="./img/nao-a-fakenews.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="toad">
+              <img
+                class="card-front"
+                src="./img/voto-nao-tem-preco.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="yoshi">
+              <img
+                class="card-front"
+                src="./img/urna-eletronica.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+
+            <div class="card" data-card="bowser">
+              <img
+                class="card-front"
+                src="./img/bandeira-urna.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="luigi">
+              <img
+                class="card-front"
+                src="./img/nao-corrupcao.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="mario">
+              <img
+                class="card-front"
+                src="./img/logo.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="peach">
+              <img
+                class="card-front"
+                src="./img/nao-a-fakenews.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="toad">
+              <img
+                class="card-front"
+                src="./img/voto-nao-tem-preco.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+            <div class="card" data-card="yoshi">
+              <img
+                class="card-front"
+                src="./img/urna-eletronica.svg"
+                alt="Face da carta"
+              />
+              <img
+                class="card-back"
+                src="./img/card-img-fundo.svg"
+                alt="Verso da carta"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
 </html>

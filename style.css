@@ -331,7 +331,7 @@ main {
 
 footer {
     background-color: #1D0426;
-    padding: 0.7rem 2rem 0;
+    padding: 0.7rem 2rem 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
