@@ -23,3 +23,152 @@ html * {
 .nav-link-custom:hover {
     color: #FFA500;
 }
+  .titulo  {
+    padding: 1.5rem 0 0 0;
+    display: flex;
+    justify-content: center;
+    color: black;
+    font-size: 40px;
+    position: relative;
+    justify-items: normal;
+    
+    
+}
+
+.custom-corrocel {
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 3px 3px 4px black;
+}
+/* _______Footer______________ */
+
+footer {
+    background-color: #1D0426;
+    padding: 0.7rem 2rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+
+.footer-cabecario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-cabecario a {
+    background-color: #FFA500;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+.seta-topo {
+    max-width: 15px;
+}
+
+.footer-container-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.footer-container-1-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-icone-social {
+    max-width: 30px;
+    transition: 0.3s all ease-in-out;
+}
+
+.footer-icone-social:hover {
+    transform: scale(1.1);
+}
+
+.footer-container-2 {
+    display: flex;
+    justify-content: center;
+}
+
+/* _______Informações__________ */
+
+.DADOS{
+    margin-top: 4.5rem;
+    padding: 1rem 1.5rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f4ecec;
+    border: 2px inset #FFA500;
+}
+
+.Idade {
+    margin-top: 4.5rem;
+    padding: 1rem 1.5rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: #f4ecec;
+    border: 2px inset #FFA500;
+}
+
+.idade-eleitoral-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    text-align: center;;
+}
+
+.secao-urnas-cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+}
+
+.img-idade {
+    max-width: 600px;
+    border: 1px solid #7C4599;
+}
+.img-votos{
+
+        max-width: 600px;
+        border: 1px solid #7C4599;
+    }
+
+
+
+
+
+/* _______Responsive__________ */
+
+@media (max-width: 260px) {
+    
+    .titulo{
+        color: #1D0426;
+
+    }
+@media (max-width: 260px ) {
+  
+ 
+    .img-votos{
+        display: none;
+    }
+}
+
+
+    .footer-cabecario a {
+        display: none;
+    }
+    
+    .idade-eleitoral-1 {
+        display: none ;
+    }
+}
+
