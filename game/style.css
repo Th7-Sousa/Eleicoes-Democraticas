@@ -34,7 +34,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0.2rem 3rem 0.2rem;
+    padding: 0 0.2rem 7rem 0.2rem;
 }
 
 .container-principal {
@@ -166,6 +166,62 @@ main {
     transform: scale(1.1);
 }
 
+
+/* _______Footer______________ */
+
+footer {
+    background-color: #1D0426;
+    padding: 0.7rem 2rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+}
+
+.footer-cabecario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-cabecario a {
+    background-color: #FFA500;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+.seta-topo {
+    max-width: 15px;
+}
+
+.footer-container-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.footer-container-1-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-icone-social {
+    max-width: 30px;
+    transition: 0.3s all ease-in-out;
+}
+
+.footer-icone-social:hover {
+    transform: scale(1.1);
+}
+
+.footer-container-2 {
+    display: flex;
+    justify-content: center;
+}
+
 @media (max-width: 1121px) {
     .card {
         width: 200px;
@@ -216,5 +272,11 @@ main {
     .card {
         width: 90px;
         height: 100px;
+    }
+}
+
+@media (max-width: 260px) {
+    .footer-cabecario a {
+        display: none;
     }
 }

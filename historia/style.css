@@ -34,7 +34,7 @@ main {
     padding: 0 2rem 1rem 2rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .cabecario {
@@ -76,8 +76,6 @@ main {
 
 .years {
     letter-spacing: 3px;
-    border: none;
-    background-color: transparent;
 }
 
 .history-line {
@@ -112,12 +110,95 @@ main {
     color: #7C4599;
 }
 
-.card-buton-close-custom {
+.card-button-close {
     background-color: #7C4599;
 }
 
-.card-buton-close-custom:hover {
+.card-button-close:hover {
     background-color: #994ec1;
+}
+
+.img-heman {
+    max-width: 40%;
+    border-radius: 10px;
+    animation: go-back 2s;
+    box-shadow: 7px 8px 4px -1px rgba(26, 1, 41, 0.75);
+    -webkit-box-shadow: 7px 8px 4px -1px rgba(26, 1, 41, 0.75);
+    -moz-box-shadow: 7px 8px 4px -1px rgba(26, 1, 41, 0.75);
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+/* _______Footer______________ */
+
+footer {
+    background-color: #1D0426;
+    padding: 0.7rem 2rem 0.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    color: #fff;
+    margin-top: 15.3rem;
+}
+
+.footer-cabecario {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-cabecario a {
+    background-color: #FFA500;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+.seta-topo {
+    max-width: 15px;
+}
+
+.footer-container-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.8rem;
+}
+
+.footer-container-1-social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-icone-social {
+    max-width: 30px;
+    transition: 0.3s all ease-in-out;
+}
+
+.footer-icone-social:hover {
+    transform: scale(1.1);
+}
+
+.footer-container-2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+@media (max-width: 260px) {
+    .footer-cabecario a {
+        display: none;
+    }
 }
 
 @media (max-width: 576px) and (min-width: 362px) {
@@ -139,5 +220,41 @@ main {
 
     .card-text-custom {
         font-size: 10px;
+    }
+
+    .img-heman {
+        border-radius: 1px;
+    }
+}
+
+@media (max-width: 651px) {
+    .history-line {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin: 1rem;
+        height: max-content;
+        width: 4rem;
+        padding: 0.5rem;
+        border-radius: 2px 2px 30px 30px;
+    }
+
+    .container-principal {
+        flex-direction: row;
+    }
+
+    .history-years {
+        width: 4rem;
+        padding: 0.5rem;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    main {
+        gap: 2rem;
+        align-items: center;
     }
 }

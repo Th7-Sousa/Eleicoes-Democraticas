@@ -1,89 +1,160 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-          crossorigin="anonymous"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./../public/logo.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-            crossorigin="anonymous">
-    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
 
-    <link rel="stylesheet" href="styles.css">
-    <title>TSE Eleições</title>
-</head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>TSE Eleições - Quiz</title>
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-light">
-
-        <div class="container-fluid">
-
-          <a class="navbar-brand" href="/">
-          <img class="logo" src="./../public/logo.svg" alt="Logo"/>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+  <body>
+    <nav id="topo" class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img class="logo" src="./../public/logo.svg" alt="Logo" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
-          </button>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 menu-custom">
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active nav-link-custom" aria-current="page" href="./../quiz/quiz.html">Quiz</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../estatisticas/estatisticas.html">Estatísticas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../game/game.html">Game</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../historia/pageHistoria.html">História</a>
-              </li>
-            </ul>
-          </div>
-
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 menu-custom">
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="./../index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active nav-link-custom"
+                aria-current="page"
+                href="./../quiz/quiz.html"
+                >Quiz</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-custom"
+                href="./../estatisticas/estatisticas.html"
+                >Estatísticas</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link-custom" href="./../game/game.html"
+                >Game</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link nav-link-custom"
+                href="./../historia/pageHistoria.html"
+                >História</a
+              >
+            </li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
 
+    <main>
       <div class="wrapper">
         <div id="quiz">
           <h1>Teste seus Conhecimentos</h1>
-          
-          <p class="questoes">
-          </p>
-          
-          <div class="respostas">
-          </div>         
-          
+
+          <p class="questoes"></p>
+
+          <div class="respostas"></div>
+
           <div class="checkAnswers">
             <h3>Acertos?</h3>
-            <div class="verificar">
-    
-            </div>
+            <div class="verificar"></div>
           </div>
         </div>
       </div>
-    </body>
-    </html>
-    
-      <script  src="./script.js"></script>
-      
-</body>
+    </main>
+
+    <footer>
+      <div class="footer-cabecario">
+        <img src="./../public/logo-footer.svg" alt="Logotipo TSE" />
+        <a href="#topo">
+          <img
+            class="seta-topo"
+            src="./../public/seta-topo.svg"
+            alt="Seta ilustrativa topo"
+          />
+        </a>
+      </div>
+
+      <div class="footer-container-1">
+        <div class="footer-container-1-contato">
+          <p>Contato:</p>
+          <p>
+            Tel: (61) 3030-7000
+            <br />
+            Email: tse@gmail.com
+          </p>
+        </div>
+        <div class="footer-container-1-social">
+          <a target="_blank" href="https://www.facebook.com/TSEJus/"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-facebook.svg"
+              alt="Ícone Facebook"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/user/justicaeleitoral"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-youtube.svg"
+              alt="Ícone YouTube"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/tsejus/?originalSubdomain=br"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-linkedin.svg"
+              alt="Ícone Linkedin"
+          /></a>
+          <a target="_blank" href="https://www.instagram.com/tsejus/"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-instagran.svg"
+              alt="Ícone Instagran"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-container-2">
+        <p>© 2022 Tribunal Superior Eleitoral , todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
 </html>

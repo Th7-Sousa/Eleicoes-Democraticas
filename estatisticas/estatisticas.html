@@ -1,285 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="style.css">
-    <title>TSE Eleições - Estatísticas</title>
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./../public/logo.svg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>TSE Eleições - Estatísticas</title>
+
 </head>
 
 <body>
- 
+  <!-- NAVBAR -->
+  <nav id="topo" class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/">
+        <img class="logo" src="./../public/logo.svg" alt="Logo" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
 
-   
-    <nav class="navbar navbar-expand-lg bg-light">
-      
-
-      
-      <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img
-              class="logo"
-              src="./../public/logo.svg"
-              alt="Logo"
-            />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
-  
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 menu-custom">
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="/"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../quiz/quiz.html">Quiz</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../estatisticas/estatisticas.html">Estatísticas</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../game/game.html">Game</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link nav-link-custom" href="./../mais/pageMais.html">Mais</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <main>
-       <!-- Principal -->
-    <main>
-      <div class="titulo">
-        <p class="subtitulo-1">Estátisticas</p>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-5 menu-custom">
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="./../quiz/quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active nav-link-custom" aria-current="page"
+              href="./../estatisticas/estatisticas.html">Estatísticas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="./../game/game.html">Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link nav-link-custom" href="./../historia/pageHistoria.html">História</a>
+          </li>
+        </ul>
       </div>
-      <!--Carrossel-->
-      <div
-      id="carouselExampleIndicators"
-      class="carousel slide custom-corrocel"
-      data-bs-ride="true"
-    >
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="prev"
-      >
+    </div>
+  </nav>
+
+  <!-- Principal -->
+  <main>
+    <div class="titulo">
+      <p class="subtitulo-1">Estatísticas</p>
+    </div>
+    <!--Carrossel-->
+    <div id="carouselExampleIndicators" class="carousel slide custom-corrocel" data-bs-ride="true">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleIndicators"
-        data-bs-slide="next"
-      >
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
       <div class="carousel-indicators">
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="0"
-          class="active"
-          aria-current="true"
-          aria-label="Slide 1"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="1"
-          aria-label="Slide 2"
-        ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <a
-            target="_blank"
-            href="https://www.tse.jus.br/o-tse/escola-judiciaria-eleitoral/publicacoes/revistas-da-eje/artigos/revista-eletronica-eje-n.-6-ano-4/por-que-a-urna-eletronica-e-segura
-          "
-          >
-            <img
-              src="./../public/eleitorado-3.svg"
-              class="d-block w-100 img-fluid"
-              alt="destaque 1"
-            />
+          <a target="_blank" href="https://www.tse.jus.br/o-tse/escola-judiciaria-eleitoral/publicacoes/revistas-da-eje/artigos/revista-eletronica-eje-n.-6-ano-4/por-que-a-urna-eletronica-e-segura
+          ">
+            <img src="./../public/eleitorado-3.svg" class="d-block w-100 img-fluid" alt="destaque 1" />
           </a>
         </div>
         <div class="carousel-item">
-          <a
-            target="_blank"
-            href="https://sig.tse.jus.br/ords/dwapr/seai/r/sig-eleitor-eleitorado-mensal/home?session=8118825906438"
-          >
-            <img
-              src="./../public/gráfico-1.svg"
-              class="d-block w-100 img-fluid"
-              alt="destaque 2"
-            />
+          <a target="_blank"
+            href="https://sig.tse.jus.br/ords/dwapr/seai/r/sig-eleitor-eleitorado-mensal/home?session=8118825906438">
+            <img src="./../public/gráfico-1.svg" class="d-block w-100 img-fluid" alt="destaque 2" />
           </a>
         </div>
         <div class="carousel-item">
-          <a
-            target="_blank"
-            href="https://sig.tse.jus.br/ords/dwapr/seai/r/sig-eleicao-filiados/home?session=374137299060"
-          >
-            <img
-              src="./../public/filiação.svg"
-              class="d-block w-100 mh-10"
-              alt="destaque 3"
-            />
+          <a target="_blank"
+            href="https://sig.tse.jus.br/ords/dwapr/seai/r/sig-eleicao-filiados/home?session=374137299060">
+            <img src="./../public/filiação.svg" class="d-block w-100 mh-10" alt="destaque 3" />
           </a>
         </div>
       </div>
-      
+
     </div>
-        
 
-        <!-- SEÇÃO DE DADOS  -->
-        <section class="DADOS">
-          <h4 class="fw-bold text-wrap">Vitória por estado</h4>
-          <p align="justify" class="text-wrap">
-            Treze estados brasileiros deram maioria dos votos a Lula. Outras 14 unidades
-            da federação concederam a maior fatia a Bolsonaro.
-            O Piauí registrou a maior distância entre os candidatos: o petista ficou com
-            76,86% dos votos, enquanto o membro do PL teve 23,14% —diferença de
-            53,72 pontos percentuais.Já Minas Gerais teve a votação mais apertada, com diferença de apenas 0,4ponto percentual. 
-            Lula levou 50,2% dos votos contra 49,8% de Bolsonaro no 
-            segundo estado mais populoso do país, atrás apenas de São Paulo
-</p>         
-           <img
-            class="img-votos"
-            src="./../public/Votos-região.svg"
-            alt="FaixaEtaria"
-          />
-          
-        </section>
-    
 
-      <!-- faixa etária -->
-      <section class="Idade">
-        <div class="idade-eleitorals">
-          <h4 class="fw-bold text-wrap"> Idade Eleitoral</h4>
-         
-        </div>
-        <div class="idade-eleitoral-1">
-          <p align="justify">
-            O eleitorado brasileiro em 2022 é 6,21% maior que o registrado em 2018. A informação é do Tribunal Superior Eleitoral (TSE), que divulgou nesta sexta-feira (15) estatísticas sobre os 156 milhões de cidadãos aptos a votar nas eleições deste ano, no dia 2 de outubro. Um dos maiores aumentos registrados foi no número de jovens entre 16 e 17 anos, cujo voto é facultativo.
-
-            Nas eleições deste ano, 2,1 milhões de  jovens nessa faixa etária poderão votar. Em 2018, eram 1,4 milhão. O crescimento equivale a 51,13% nessa faixa etária do eleitorado. Segundo o TSE quase a totalidade dos eleitores jovens que vão votar em 2022 fez cadastro na Justiça Eleitoral nos quatro primeiros meses deste ano, graças a campanhas promovidas para conscientizar os jovens do seu direito.
-            
-            — Os dados demonstram a pujança cívica da cidadania no Brasil. São mais de 156 milhões de eleitores que compõem no cadastro eleitoral o maior eleitorado da história brasileira — disse o presidente do TSE, ministro Edson Facchin, ao divulgar os resultado final da sistematização do cadastramento eleitoral no Brasil.
-            
-            O eleitorado acima de 70 anos também cresceu. O salto foi de 23,82%, de 12 milhões em 2018 para 14,8 milhões em 2022. Esse número representa 9,52% de todo o eleitorado apto a votar no dia 2 de outubro. O voto nessa faixa etária também é facultativo, assim como acontece com os jovens e os analfabetos.
-
-Fonte: 
-            
-            <a
-              target="_blank"
-              class="link-brasil-escola"
-              href="https://www12.senado.leg.br/noticias/materias/2022/07/15/proporcao-de-jovens-cresce-no-maior-eleitorado-da-historia"
-            >
-              Agencia Senado </a
-            >.
-          </p>
-
-        
-          </div>
-        </div>
-      </section>
-      
-      
-      </main>
- <!-- FOOTER -->
- <footer>
-  <div class="footer-cabecario">
-    <img src="./../public/logo-footer.svg" alt="Logotipo TSE" />
-    <a href="#topo">
-      <img
-        class="seta-topo"
-        src="./../public/seta-topo.svg"
-        alt="Seta ilustrativa topo"
-      />
-    </a>
-  </div>
-
-  <div class="footer-container-1">
-    <div class="footer-container-1-contato">
-      <p>Contato:</p>
-      <p>
-        Tel: (61) 3030-7000
-        <br />
-        Email: tse@gmail.com
+    <!-- SEÇÃO DE DADOS  -->
+    <section class="DADOS">
+      <h4 class="fw-bold text-wrap">Vitória por estado</h4>
+      <p align="justify" class="text-wrap">
+        Treze estados brasileiros deram maioria dos votos a Lula. Outras 14 unidades
+        da federação concederam a maior fatia a Bolsonaro.
+        O Piauí registrou a maior distância entre os candidatos: o petista ficou com
+        76,86% dos votos, enquanto o membro do PL teve 23,14% —diferença de
+        53,72 pontos percentuais.Já Minas Gerais teve a votação mais apertada, com diferença de apenas 0,4ponto
+        percentual.
+        Lula levou 50,2% dos votos contra 49,8% de Bolsonaro no
+        segundo estado mais populoso do país, atrás apenas de São Paulo
       </p>
-    </div>
-    <div class="footer-container-1-social">
-      <a target="_blank" href="https://www.facebook.com/TSEJus/"
-        ><img
-          class="footer-icone-social"
-          src="./../public/icon-facebook.svg"
-          alt="Ícone Facebook"
-      /></a>
-      <a
-        target="_blank"
-        href="https://www.youtube.com/user/justicaeleitoral"
-        ><img
-          class="footer-icone-social"
-          src="./../public/icon-youtube.svg"
-          alt="Ícone YouTube"
-      /></a>
-      <a
-        target="_blank"
-        href="https://www.linkedin.com/company/tsejus/?originalSubdomain=br"
-        ><img
-          class="footer-icone-social"
-          src="./../public/icon-linkedin.svg"
-          alt="Ícone Linkedin"
-      /></a>
-      <a target="_blank" href="https://www.instagram.com/tsejus/"
-        ><img
-          class="footer-icone-social"
-          src="./../public/icon-instagran.svg"
-          alt="Ícone Instagran"
-      /></a>
-    </div>
-  </div>
+      <img class="img-votos" src="./../public/Votos-região.svg" alt="FaixaEtaria" />
 
-  <div class="footer-container-2">
-    <p>© 2022 Tribunal Superior Eleitoral , todos os direitos reservados</p>
-  </div>
-</footer>
+    </section>
+
+
+    <!-- faixa etária -->
+    <section class="Idade">
+      <div class="idade-eleitorals">
+        <h4 class="fw-bold text-wrap"> Idade Eleitoral</h4>
+
+      </div>
+      <div class="idade-eleitoral-1">
+        <p align="justify">
+          O eleitorado brasileiro em 2022 é 6,21% maior que o registrado em 2018. A informação é do Tribunal Superior
+          Eleitoral (TSE), que divulgou nesta sexta-feira (15) estatísticas sobre os 156 milhões de cidadãos aptos a
+          votar nas eleições deste ano, no dia 2 de outubro. Um dos maiores aumentos registrados foi no número de jovens
+          entre 16 e 17 anos, cujo voto é facultativo.
+
+          Nas eleições deste ano, 2,1 milhões de  jovens nessa faixa etária poderão votar. Em 2018, eram 1,4 milhão. O
+          crescimento equivale a 51,13% nessa faixa etária do eleitorado. Segundo o TSE quase a totalidade dos eleitores
+          jovens que vão votar em 2022 fez cadastro na Justiça Eleitoral nos quatro primeiros meses deste ano, graças a
+          campanhas promovidas para conscientizar os jovens do seu direito.
+
+          — Os dados demonstram a pujança cívica da cidadania no Brasil. São mais de 156 milhões de eleitores que
+          compõem no cadastro eleitoral o maior eleitorado da história brasileira — disse o presidente do TSE, ministro
+          Edson Facchin, ao divulgar os resultado final da sistematização do cadastramento eleitoral no Brasil.
+
+          O eleitorado acima de 70 anos também cresceu. O salto foi de 23,82%, de 12 milhões em 2018 para 14,8 milhões
+          em 2022. Esse número representa 9,52% de todo o eleitorado apto a votar no dia 2 de outubro. O voto nessa
+          faixa etária também é facultativo, assim como acontece com os jovens e os analfabetos.
+
+          Fonte:
+
+          <a target="_blank" class="link-brasil-escola"
+            href="https://www12.senado.leg.br/noticias/materias/2022/07/15/proporcao-de-jovens-cresce-no-maior-eleitorado-da-historia">
+            Agencia Senado </a>.
+        </p>
+
+
+      </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-cabecario">
+      <img src="./../public/logo-footer.svg" alt="Logotipo TSE" />
+      <a href="#topo">
+        <img class="seta-topo" src="./../public/seta-topo.svg" alt="Seta ilustrativa topo" />
+      </a>
+    </div>
+
+    <div class="footer-container-1">
+      <div class="footer-container-1-contato">
+        <p>Contato:</p>
+        <p>
+          Tel: (61) 3030-7000
+          <br />
+          Email: tse@gmail.com
+        </p>
+      </div>
+      <div class="footer-container-1-social">
+        <a target="_blank" href="https://www.facebook.com/TSEJus/"><img class="footer-icone-social"
+            src="./../public/icon-facebook.svg" alt="Ícone Facebook" /></a>
+        <a target="_blank" href="https://www.youtube.com/user/justicaeleitoral"><img class="footer-icone-social"
+            src="./../public/icon-youtube.svg" alt="Ícone YouTube" /></a>
+        <a target="_blank" href="https://www.linkedin.com/company/tsejus/?originalSubdomain=br"><img
+            class="footer-icone-social" src="./../public/icon-linkedin.svg" alt="Ícone Linkedin" /></a>
+        <a target="_blank" href="https://www.instagram.com/tsejus/"><img class="footer-icone-social"
+            src="./../public/icon-instagran.svg" alt="Ícone Instagran" /></a>
+      </div>
+    </div>
+
+    <div class="footer-container-2">
+      <p>© 2022 Tribunal Superior Eleitoral , todos os direitos reservados</p>
+    </div>
+  </footer>
 </body>
+
 </html>

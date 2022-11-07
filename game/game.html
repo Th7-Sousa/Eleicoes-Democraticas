@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./../public/logo.svg" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -18,8 +19,10 @@
     <link rel="stylesheet" href="style.css" />
     <title>TSE Eleições - Game</title>
   </head>
+
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <!-- NAVBAR -->
+    <nav id="topo" class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
           <img class="logo" src="./../public/logo.svg" alt="Logo" />
@@ -72,6 +75,7 @@
       </div>
     </nav>
 
+    <!-- MAIN -->
     <main>
       <div id="card-win">
         <span>Parabéns !</span>
@@ -255,6 +259,66 @@
         </div>
       </div>
     </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-cabecario">
+        <img src="./../public/logo-footer.svg" alt="Logotipo TSE" />
+        <a href="#topo">
+          <img
+            class="seta-topo"
+            src="./../public/seta-topo.svg"
+            alt="Seta ilustrativa topo"
+          />
+        </a>
+      </div>
+
+      <div class="footer-container-1">
+        <div class="footer-container-1-contato">
+          <p>Contato:</p>
+          <p>
+            Tel: (61) 3030-7000
+            <br />
+            Email: tse@gmail.com
+          </p>
+        </div>
+        <div class="footer-container-1-social">
+          <a target="_blank" href="https://www.facebook.com/TSEJus/"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-facebook.svg"
+              alt="Ícone Facebook"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/user/justicaeleitoral"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-youtube.svg"
+              alt="Ícone YouTube"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/tsejus/?originalSubdomain=br"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-linkedin.svg"
+              alt="Ícone Linkedin"
+          /></a>
+          <a target="_blank" href="https://www.instagram.com/tsejus/"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-instagran.svg"
+              alt="Ícone Instagran"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-container-2">
+        <p>© 2022 Tribunal Superior Eleitoral , todos os direitos reservados</p>
+      </div>
+    </footer>
+
     <script src="./script.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./../public/logo.svg" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,11 +17,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
-    <title>TSE Eleições - Mais</title>
+    <title>TSE Eleições - História</title>
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav id="topo" class="navbar navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="/">
           <img class="logo" src="./../public/logo.svg" alt="Logo" />
@@ -90,11 +91,12 @@
       <section class="container-principal">
         <div class="history-years">
           <span class="fw-bold years">1985</span>
-          <span class="fw-bold years">1959</span>
-          <span class="fw-bold years">1959</span>
-          <span class="fw-bold years">1958</span>
-          <span class="fw-bold years">1958</span>
-          <span class="fw-bold years">1958</span>
+          <span class="fw-bold years">1995</span>
+          <span class="fw-bold years">1996</span>
+          <span class="fw-bold years">2000</span>
+          <span class="fw-bold years">2008</span>
+          <span class="fw-bold years">2017</span>
+          <span class="fw-bold years">Futuro</span>
         </div>
 
         <div class="history-line">
@@ -103,22 +105,125 @@
             id="history-point"
             class="btn btn-primary"
             data-bs-toggle="modal"
-            data-bs-target="#card"
+            data-bs-target="#card1"
           ></button>
 
-          <button id="history-point"></button>
-          <button id="history-point"></button>
-          <button id="history-point"></button>
-          <button id="history-point"></button>
-          <button id="history-point"></button>
+          <button
+            type="button"
+            id="history-point"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#card2"
+          ></button>
+
+          <button
+            type="button"
+            id="history-point"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#card3"
+          ></button>
+
+          <button
+            type="button"
+            id="history-point"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#card4"
+          ></button>
+
+          <button
+            type="button"
+            id="history-point"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#card5"
+          ></button>
+
+          <button
+            type="button"
+            id="history-point"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#card6"
+          ></button>
+
+          <button
+            type="button"
+            id="history-point"
+            class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#card7"
+          ></button>
         </div>
       </section>
     </main>
 
-    <!-- Modal -->
+    <!-- Footer -->
+    <footer>
+      <div class="footer-cabecario">
+        <img src="./../public/logo-footer.svg" alt="Logotipo TSE" />
+        <a href="#topo">
+          <img
+            class="seta-topo"
+            src="./../public/seta-topo.svg"
+            alt="Seta ilustrativa topo"
+          />
+        </a>
+      </div>
+
+      <div class="footer-container-1">
+        <div class="footer-container-1-contato">
+          <p>Contato:</p>
+          <p>
+            Tel: (61) 3030-7000
+            <br />
+            Email: tse@gmail.com
+          </p>
+        </div>
+        <div class="footer-container-1-social">
+          <a target="_blank" href="https://www.facebook.com/TSEJus/"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-facebook.svg"
+              alt="Ícone Facebook"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.youtube.com/user/justicaeleitoral"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-youtube.svg"
+              alt="Ícone YouTube"
+          /></a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/tsejus/?originalSubdomain=br"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-linkedin.svg"
+              alt="Ícone Linkedin"
+          /></a>
+          <a target="_blank" href="https://www.instagram.com/tsejus/"
+            ><img
+              class="footer-icone-social"
+              src="./../public/icon-instagran.svg"
+              alt="Ícone Instagran"
+          /></a>
+        </div>
+      </div>
+
+      <div class="footer-container-2">
+        <p>© 2022 Tribunal Superior Eleitoral , todos os direitos reservados</p>
+      </div>
+    </footer>
+
+    
+    <div>
+    <!-- Card 1 -->
     <div
       class="modal fade"
-      id="card"
+      id="card1"
       tabindex="-1"
       aria-labelledby="cardLabel"
       aria-hidden="true"
@@ -127,7 +232,7 @@
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5 fw-bold title-card" id="cardLabel">
-              1985 - Criação das urnas eletrônicas
+              1985 - Início
             </h1>
             <button
               type="button"
@@ -153,7 +258,7 @@
           <div class="modal-footer border border-0">
             <button
               type="button"
-              class="btn btn-secondary card-buton-close-custom"
+              class="btn btn-secondary card-button-close"
               data-bs-dismiss="modal"
             >
               Fechar
@@ -162,6 +267,340 @@
         </div>
       </div>
     </div>
+
+    <!-- Card 2 -->
+    <div
+      class="modal fade"
+      id="card2"
+      tabindex="-1"
+      aria-labelledby="card2Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered card-custom">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold title-card" id="card2Label">
+              1995 - Consolidação da urna eletrônica
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body border border-0">
+            <p align="justify" class="fw-bold card-text-custom">
+              Depois de 63 anos já prevista no código Eleitoral, finalmente o
+              projeto da urna eletrônica foi concluído. O primeiro modelo
+              combinava tela, teclado e cpu em uma só máquina, sendo que o
+              teclado era de membrana e só mais tarde seria substituído pelo de
+              relevo.
+            </p>
+          </div>
+          <div class="modal-footer border border-0">
+            <button
+              type="button"
+              class="btn btn-secondary card-button-close"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div
+      class="modal fade"
+      id="card3"
+      tabindex="-1"
+      aria-labelledby="card3Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered card-custom">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold title-card" id="card3Label">
+              1996 - Primeira utilização
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body border border-0">
+            <p align="justify" class="fw-bold card-text-custom">
+              Sua primeira utilização no Brasil se deu nas eleições municipais,
+              quando 57 cidades utilizaram as urnas. Os eleitores já tinham a
+              opçaõ de um botão para votar em branco, porém, para votar nulo
+              tinham que digitar números aleatórios que não fossem de
+              candidatos, pois ainda não tinha sido implementado um botão para
+              essa função.
+            </p>
+          </div>
+          <div class="modal-footer border border-0">
+            <button
+              type="button"
+              class="btn btn-secondary card-button-close"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div
+      class="modal fade"
+      id="card4"
+      tabindex="-1"
+      aria-labelledby="card4Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered card-custom">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold title-card" id="card4Label">
+              2000 - Implementação em todas as cidades
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body border border-0">
+            <p align="justify" class="fw-bold card-text-custom">
+              Neste ano, as urnas eletrônicas foram utilizadas em todas as
+              cidades brasileiras pela primeira vez. Uma curiosidade é que nesse
+              novo sistema tinha um suporte para deficientes auditivos.
+            </p>
+          </div>
+          <div class="modal-footer border border-0">
+            <button
+              type="button"
+              class="btn btn-secondary card-button-close"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div
+      class="modal fade"
+      id="card5"
+      tabindex="-1"
+      aria-labelledby="card5Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered card-custom">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold title-card" id="card5Label">
+              2008 - Implementação da biometria
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body border border-0">
+            <p align="justify" class="fw-bold card-text-custom">
+              o TSE iniciou um projeto piloto que utilizava o sistema biométrico
+              de identificação dos eleitores. O sistema identifica as impressões
+              digitais de cada um, o que afastaria a possibilidade de fraude
+              durante a votação. Giuseppe Janino (secretário de tecnologia do
+              TSE, na época) citou que com a biometria o própio eleitor iria
+              liberar seu acesso a urna. <br />
+              "Não há duas digitais iguais no mundo. Esse é um dispositivo
+              altamente preciso e confiável para a identidade do cidadão,
+              tornando qualquer tipo de documento de identificação secundário",
+              afirmou ainda Janino.
+            </p>
+          </div>
+          <div class="modal-footer border border-0">
+            <button
+              type="button"
+              class="btn btn-secondary card-button-close"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div
+      class="modal fade"
+      id="card6"
+      tabindex="-1"
+      aria-labelledby="card6Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered card-custom">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold title-card" id="card6Label">
+              2017 - Modernização
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body border border-0">
+            <p align="justify" class="fw-bold card-text-custom">
+              Nesse ano, a urna eletrônica começou a receber upgrades para se
+              modernizar, com destaque para seu design, que vem sofrendo
+              alterações aos poucos.
+            </p>
+          </div>
+          <div class="modal-footer border border-0">
+            <button
+              type="button"
+              class="btn btn-secondary card-button-close"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card 7 -->
+    <div
+      class="modal fade"
+      id="card7"
+      tabindex="-1"
+      aria-labelledby="card7Label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered card-custom">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold title-card" id="card7Label">
+              Futuro - Voto online
+            </h1>
+            <a
+              href="#"
+              type="button"
+              id="btn-fim"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#card-fim"
+            >
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </a>
+          </div>
+          <div class="modal-body border border-0">
+            <p align="justify" class="fw-bold card-text-custom">
+              Mesmo com toda essa evolução da urna eletrônica e do sistema de
+              votação no Brasil, ainda podemos esperar por mais avanços
+              tecnológicos. Um desses avanços esperados é as votações online.
+              <br />
+              O TSE já realizou testes com 31 empresas para simulações de
+              votações pela internet, com celulares, tablets e computadores.
+              Quem apresentou a iniciativa foi o ex-presidente do Tribunal
+              Superior Eleitoral e atual ministro do Supremo Tribunal Federal
+              Luís Roberto Barroso. O objetivo era buscar uma alternativa mais
+              barata à urna eletrônica. <br />
+              No entanto esta ideia terá que enfrentar muitos desafios para
+              poder se tornar uma realidade, dentre eles, o principal será as
+              polêmicas de segurança.
+            </p>
+          </div>
+          <div class="modal-footer border border-0">
+            <a
+              href="#"
+              type="button"
+              id="btn-fim"
+              class="btn"
+              data-bs-toggle="modal"
+              data-bs-target="#card-fim"
+            >
+              <button
+                type="button"
+                class="btn btn-secondary card-button-close"
+                data-bs-dismiss="modal"
+              >
+                Fechar
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card Fim -->
+    <div
+      class="modal fade"
+      id="card-fim"
+      tabindex="-1"
+      aria-labelledby="card-fimLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered card-custom">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5 fw-bold title-card" id="card-fimLabel">
+              Fim da linha cronológica
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body border border-0">
+            <p align="justify" class="fw-bold card-text-custom">
+              Chegamos ao fim da História, espero que tenha aprendido muito com
+              todos esses fatos históricos! <br />
+              <br />
+              :)
+            </p>
+            <img
+              class="img-heman"
+              src="./../public/ate-a-proxima.svg"
+              alt="Imagen He Man"
+            />
+          </div>
+          <div class="modal-footer border border-0">
+            <button
+              type="button"
+              class="btn btn-secondary card-button-close"
+              data-bs-dismiss="modal"
+            >
+              Fechar
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <script src="./script.js"></script>
   </body>

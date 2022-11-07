@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html * {
     font-family: 'Nunito', sans-serif;
     font-weight: 500;
@@ -23,7 +29,8 @@ html * {
 .nav-link-custom:hover {
     color: #FFA500;
 }
-  .titulo  {
+
+.titulo {
     padding: 1.5rem 0 0 0;
     display: flex;
     justify-content: center;
@@ -31,8 +38,6 @@ html * {
     font-size: 40px;
     position: relative;
     justify-items: normal;
-    
-    
 }
 
 .custom-corrocel {
@@ -40,6 +45,7 @@ html * {
     margin: auto;
     box-shadow: 3px 3px 4px black;
 }
+
 /* _______Footer______________ */
 
 footer {
@@ -97,8 +103,8 @@ footer {
 
 /* _______Informações__________ */
 
-.DADOS{
-    margin-top: 4.5rem;
+.DADOS {
+    margin-top: 13rem;
     padding: 1rem 1.5rem 1rem 2rem;
     display: flex;
     flex-direction: column;
@@ -122,7 +128,8 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 1.5rem;
-    text-align: center;;
+    text-align: center;
+    ;
 }
 
 .secao-urnas-cabecalho {
@@ -136,11 +143,12 @@ footer {
     max-width: 600px;
     border: 1px solid #7C4599;
 }
-.img-votos{
 
-        max-width: 600px;
-        border: 1px solid #7C4599;
-    }
+.img-votos {
+
+    max-width: 600px;
+    border: 1px solid #7C4599;
+}
 
 
 
@@ -149,26 +157,26 @@ footer {
 /* _______Responsive__________ */
 
 @media (max-width: 260px) {
-    
-    .titulo{
+
+    .titulo {
         color: #1D0426;
 
     }
-@media (max-width: 260px ) {
-  
- 
-    .img-votos{
-        display: none;
+
+    @media (max-width: 260px) {
+
+
+        .img-votos {
+            display: none;
+        }
     }
-}
 
 
     .footer-cabecario a {
         display: none;
     }
-    
+
     .idade-eleitoral-1 {
-        display: none ;
+        display: none;
     }
 }
-
