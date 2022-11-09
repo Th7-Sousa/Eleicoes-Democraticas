@@ -68,7 +68,7 @@ window.onload = function () {
 
   function checkAnswer(i, arr) {
     // Esta é a função que será executada, ao clicar em uma das respostas
-    // Verifica se dadoAnswer é sams como o correto
+    // Verifica se resposta é o indice como o correto
     // Depois disso, verifique se é a última pergunta:
     // Se for: esvazie a answerArea e deixe-os saber que está feito.
 
